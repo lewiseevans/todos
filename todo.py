@@ -10,7 +10,7 @@ except ImportError:
 width, height = unicornhathd.get_shape()
 
 # Select font and size
-FONT = ('/usr/share/fonts/truetype/freefont/FreeSansBold.ttf', 8)
+FONT = ('/usr/share/fonts/truetype/freefont/FreeSansBold.ttf', 12)
 
 
 def display(todo):
@@ -54,7 +54,7 @@ def display(todo):
 
         unicornhathd.show()
 
-        time.sleep(0.01)
+        time.sleep(0.04)
 
 
 def readTodos():
