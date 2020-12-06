@@ -49,7 +49,7 @@ def display(todo):
             for y in range(height):
                 pixel = image.getpixel((x + scroll, y))
                 r, g, b = [int(n) for n in pixel]
-                unicornhathd.set_pixel(width - 1 - x, r, g, b)
+                unicornhathd.set_pixel(width - 1 - x, y, r, g, b)
             unicornhathd.show()
             time.sleep(0.01)
 
