@@ -10,7 +10,7 @@ except ImportError:
 width, height = unicornhathd.get_shape()
 
 # Select font and size
-FONT = ('/usr/share/fonts/truetype/freefont/FreeSansBold.ttf', 10)
+FONT = ('/usr/share/fonts/truetype/freefont/FreeSansBold.ttf', 8)
 
 
 def display(todo):
@@ -18,6 +18,7 @@ def display(todo):
 
     # Set the rotation of the display
     unicornhathd.rotation(90)
+    unicornhathd.brightness(0.6)
 
     # We want to draw our text 1 pixel in, and 2 pixels down from the top left corner
     text_x = 1
@@ -42,7 +43,7 @@ def display(todo):
     draw = ImageDraw.Draw(image)
 
     # And now we can draw text at our desited (text_x, text_y) offset, using our loaded font
-    draw.text((text_x, text_y), todo, fill=(255, 255, 255), font=font)
+    draw.text((text_x, text_y), todo, fill=(0, 0, 255), font=font)
 
     for scroll in range(text_width - width):
         for x in range(width):
