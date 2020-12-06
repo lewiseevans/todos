@@ -63,12 +63,12 @@ def readTodos():
     return todoLines
 
 
-todos = readTodos()
-
 try:
 
-    for todo in todos:
-        display(todo.strip())
+    while True:
+        todos = readTodos()
+        for todo in todos:
+            display(todo.strip())
 
 except KeyboardInterrupt:
     unicornhathd.off()
