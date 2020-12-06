@@ -62,5 +62,13 @@ def readTodos():
 
 todos = readTodos()
 
-for todo in todos:
-    display(todo.strip())
+try:
+
+    for todo in todos:
+        display(todo.strip())
+
+except KeyboardInterrupt:
+    unicornhathd.off()
+
+finally:
+    unicornhathd.off()
