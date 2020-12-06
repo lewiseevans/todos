@@ -51,8 +51,10 @@ def display(todo):
                 pixel = image.getpixel((x + scroll, y))
                 r, g, b = [int(n) for n in pixel]
                 unicornhathd.set_pixel(width - 1 - x, y, r, g, b)
-            unicornhathd.show()
-            time.sleep(0.01)
+
+        unicornhathd.show()
+
+        time.sleep(0.01)
 
 
 def readTodos():
