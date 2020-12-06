@@ -10,7 +10,7 @@ except ImportError:
 width, height = unicornhathd.get_shape()
 
 # Select font and size
-FONT = ('/usr/share/fonts/truetype/freefont/FreeSansBold.ttf', 12)
+FONT = ('/usr/share/fonts/truetype/freefont/FreeSans.ttf', 12)
 
 
 def display(todo):
